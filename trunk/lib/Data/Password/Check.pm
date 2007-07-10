@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 NAME
 
@@ -497,11 +497,20 @@ sub _skipped_test($$) {
 
 =head1 AUTHOR
 
-Chisel Wright, E<lt>chisel@herlpacker.co.ukE<gt>
+Chisel Wright C<< <cpan@herlpacker.co.uk> >>
+
+=head1 CONTRIBUTORS
+
+Dermot McNally C<< CPANID: DERMOT >>
+
+=head1 PROJECT HOMEPAGE
+
+This project can be found at BerliOS:
+L<http://developer.berlios.de/projects/d-p-check/>
 
 =head1 COPYRIGHT AND LICENCE
 
-Copyright (C) 2005 by Chisel Wright
+Copyright (C) 2005-2007 by Chisel Wright
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.2 or,

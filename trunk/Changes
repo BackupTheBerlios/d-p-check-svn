@@ -1,5 +1,8 @@
 Revision history for Perl extension Password::Check.
 
+	- added diverse_characters (from: Dermot McNally)
+	- modified POD: author email changed, added CONTRIBUTORS and PROJECT HOMEPAGE
+
 0.05 Sun Oct  9 17:54:12 BST 2005
     - fixed test cases that don't appear to be working
     - 'retabbed' Check.pm file
