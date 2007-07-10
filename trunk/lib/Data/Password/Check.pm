@@ -497,7 +497,7 @@ sub _skipped_test($$) {
 
 =head1 AUTHOR
 
-Chisel Wright C<< <cpan@herlpacker.co.uk> >>
+Chisel Wright C<< <chiselwright@berlios.de> >>
 
 =head1 CONTRIBUTORS
 
