@@ -275,11 +275,13 @@ sub _check_diverse_characters($) {
     my $group_count = 0;
     foreach my $pattern (qw([A-Z] [a-z] [0-9] [^A-Za-z0-9]))
     {
-    	$group_count++ if $self->{'password'} =~ /$pattern/;
+        if ($self->{'password'} =~ /$pattern/) {
+            $group_count++;
+        }
     }
     
     # Are enough character groups used to satisfy diversity requirements?
-    unless ($group_count >= $diversity_required) {
+    if ($group_count < $diversity_required) {
         $self->_add_error("Your password must contain a good mix of character types, from at least $diversity_required of the following categories: Uppercase letters, lowercase letters, numeral, symbols.");
     }
 }
