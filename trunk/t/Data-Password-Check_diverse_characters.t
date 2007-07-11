@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-use Data::Dump;
+use Data::Dumper;
 
 use Test::More tests => 21;
 
@@ -112,7 +112,7 @@ foreach my $test (@tests) {
 	# if we don't expect an error, but get one ...
 	if ($pwcheck->has_errors && not $test->{'expect_error'}) {
 		diag qq{recieved an unexpected error for $test->{password}};
-		die pp( $pwcheck->error_list );
+		die Dumper( $pwcheck->error_list );
 	}
 
 	# skip the error message test if we didn't have an error
