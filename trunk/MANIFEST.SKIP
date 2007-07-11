@@ -1,0 +1,5 @@
+MANIFEST.SKIP
+.gz$
+^Makefile$
+^Makefile.old$
+.bak$
