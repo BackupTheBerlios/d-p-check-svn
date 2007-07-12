@@ -1,5 +1,4 @@
 Changes
-examples/
 examples/mychecks.pl
 examples/MyPassword.pm
 lib/Data/Password/Check.pm
